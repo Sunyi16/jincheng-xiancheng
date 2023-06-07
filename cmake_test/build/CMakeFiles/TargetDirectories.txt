@@ -1,3 +1,6 @@
-/home/sunyi/jincheng_study/cmake_test/build/CMakeFiles/rebuild_cache.dir
-/home/sunyi/jincheng_study/cmake_test/build/CMakeFiles/hello.dir
-/home/sunyi/jincheng_study/cmake_test/build/CMakeFiles/edit_cache.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles/rebuild_cache.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles/edit_cache.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/rebuild_cache.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/edit_cache.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/hello.dir
+/home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/duqushipin.dir

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles /home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles /home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/progress.marks
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunyi/data/jincheng_study/cmake_test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,78 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hello
+# Convenience name for target.
+bin/CMakeFiles/hello.dir/rule:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/hello.dir/rule
+.PHONY : bin/CMakeFiles/hello.dir/rule
 
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
+# Convenience name for target.
+hello: bin/CMakeFiles/hello.dir/rule
+
 .PHONY : hello
 
 # fast build rule for target.
 hello/fast:
-	$(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/build
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-#=============================================================================
-# Target rules for targets named duqushipin
+# Convenience name for target.
+bin/CMakeFiles/duqushipin.dir/rule:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f CMakeFiles/Makefile2 bin/CMakeFiles/duqushipin.dir/rule
+.PHONY : bin/CMakeFiles/duqushipin.dir/rule
 
-# Build rule for target.
-duqushipin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 duqushipin
+# Convenience name for target.
+duqushipin: bin/CMakeFiles/duqushipin.dir/rule
+
 .PHONY : duqushipin
 
 # fast build rule for target.
 duqushipin/fast:
-	$(MAKE) -f bin/CMakeFiles/duqushipin.dir/build.make bin/CMakeFiles/duqushipin.dir/build
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/duqushipin.dir/build.make bin/CMakeFiles/duqushipin.dir/build
 .PHONY : duqushipin/fast
+
+# target to build an object file
+main.o:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.o
+.PHONY : main.o
+
+# target to preprocess a source file
+main.i:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.i
+.PHONY : main.i
+
+# target to generate assembly for a file
+main.s:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/hello.dir/build.make bin/CMakeFiles/hello.dir/main.s
+.PHONY : main.s
+
+# target to build an object file
+opencv_1.o:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/duqushipin.dir/build.make bin/CMakeFiles/duqushipin.dir/opencv_1.o
+.PHONY : opencv_1.o
+
+# target to preprocess a source file
+opencv_1.i:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/duqushipin.dir/build.make bin/CMakeFiles/duqushipin.dir/opencv_1.i
+.PHONY : opencv_1.i
+
+# target to generate assembly for a file
+opencv_1.s:
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(MAKE) -f bin/CMakeFiles/duqushipin.dir/build.make bin/CMakeFiles/duqushipin.dir/opencv_1.s
+.PHONY : opencv_1.s
 
 # Help Target
 help:
@@ -146,6 +180,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... hello"
 	@echo "... duqushipin"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... opencv_1.o"
+	@echo "... opencv_1.i"
+	@echo "... opencv_1.s"
 .PHONY : help
 
 
@@ -157,6 +197,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sunyi/data/jincheng_study/cmake_test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

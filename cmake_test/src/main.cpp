@@ -1,3 +1,5 @@
+/*cmake--study*/
+
 #include<iostream>
 
 int main(){

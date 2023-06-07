@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sunyi/jincheng_study/cmake_test/src/main.cpp" "/home/sunyi/jincheng_study/cmake_test/build/CMakeFiles/hello.dir/main.cpp.o"
+  "/home/sunyi/data/jincheng_study/cmake_test/src/opencv_1.cpp" "/home/sunyi/data/jincheng_study/cmake_test/build/bin/CMakeFiles/duqushipin.dir/opencv_1.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/opencv"
   )
 
 # Targets to which this target links.
